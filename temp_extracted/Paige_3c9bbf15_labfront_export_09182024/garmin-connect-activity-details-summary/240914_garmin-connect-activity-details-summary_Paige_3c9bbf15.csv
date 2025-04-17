@@ -1,0 +1,12 @@
+Header Length,5
+Powered by Labfront
+Documentation,https://help.labfront.com/data-documentation
+projectId,projectTitle,participantId,participantInsignia
+ec9102ee-3288-4101-af76-62a48ac4c60a,Trial 1,3c9bbf15-e24e-4cb3-95c5-06820fcfb0f3,Paige
+
+summaryId,activityId,timezoneOffsetInMs,unixTimestampInMs,isoDate,durationInMs,activityType,averageBikeCadenceInRoundsPerMinute,averageHeartRateInBeatsPerMinute,averageRunCadenceInStepsPerMinute,averageSpeedInMetersPerSecond,averageSwimCadenceInStrokesPerMinute,averagePaceInMinutesPerKilometer,activeKilocalories,deviceName,distanceInMeters,maxBikeCadenceInRoundsPerMinute,maxHeartRateInBeatsPerMinute,maxPaceInMinutesPerKilometer,maxRunCadenceInStepsPerMinute,maxSpeedInMetersPerSecond,numberOfActiveLengths,startingLatitudeInDegree,startingLongitudeInDegree,steps,totalElevationGainInMeters,totalElevationLossInMeters,isParent,parentSummaryId,manual
+17032762934-detail,17032762934,-14400000,1726323951000,2024-09-14T10:25:51.000-04:00,1784000,RUNNING,,161,161.01562,3.011,,5.5352597,318,Forerunner 265S,5370.27,,186,4.6399403,171,3.592,,42.378772934898734,-71.11666414886713,4796,8,9,,,
+17033442708-detail,17033442708,-14400000,1726326355000,2024-09-14T11:05:55.000-04:00,3606000,ROWING_V2,,130,,2.495,,6.680027,391,Forerunner 265S,8996.93,,157,4.0960107,,4.069,,42.36413427628577,-71.14057495258749,,,,,,
+17041463138-detail,17041463138,-14400000,1726406620000,2024-09-15T09:23:40.000-04:00,4244000,RUNNING,,173,162.6875,3.048,,5.4680667,800,Forerunner 265S,12935.55,,192,4.5687137,172,3.648,,42.36990806646645,-71.11925021745265,11506,31,26,,,
+17062363837-detail,17062363837,-14400000,1726614815000,2024-09-17T19:13:35.000-04:00,2279000,RUNNING,,164,159.9375,2.938,,5.672793,410,Forerunner 265S,6697.91,,185,4.627059,170,3.602,,42.372269835323095,-71.12033307552338,6124,16,16,,,
+17065553090-detail,17065553090,-14400000,1726653843000,2024-09-18T06:04:03.000-04:00,4284000,ROWING_V2,,115,,2.436,,6.8418164,352,Forerunner 265S,10436.43,,147,4.6607013,,3.576,,42.36415933817625,-71.14063136279583,,,,,,
