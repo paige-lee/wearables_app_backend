@@ -22,10 +22,17 @@ app = FastAPI()
 # Add GZip middleware to compress responses larger than 10000 bytes
 app.add_middleware(GZipMiddleware, minimum_size=10000)
 
+# Allow frontend access from your Vercel domain
+origins = [
+    "http://localhost:3000",                 # for local dev
+    "https://wearables-app-backend.onrender.com"  # replace with your actual Vercel URL
+]
+
 # CORS: allow frontend (localhost:3000) to access the backend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Frontend origin
+    # allow_origins=["http://localhost:3000"],  # Frontend origin
+    allow_origins = origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
