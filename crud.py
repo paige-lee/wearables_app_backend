@@ -36,14 +36,14 @@ def get_annotations(db, username, type):
         SELECT * FROM annotations
         WHERE username = :username AND type = :type
     """)
-    result = db.execute(query, {"username": username, "type": type}).fetchall()
+    result = db.execute(query, {"username": username, "type": type}).mappings().all()
     return [dict(row) for row in result]
 
 
 def fetch_data(db: Session, username: str, datatype: str):
     table_name = f"{username}_{datatype}"
     query = f"SELECT * FROM {table_name}"
-    return db.execute(text(query)).fetchall()
+    return db.execute(text(query)).mappings().all()
 
 def compare_stress_windows(db: Session, username: str, intervention: str, metric: str):
     return {"message": f"Compared stress for {intervention} and metric {metric}"}

@@ -146,7 +146,7 @@ def get_all_user_data(username: str, db: Session = Depends(get_db)):
                 FROM {username}_{name}
                 ORDER BY timestamp_cleaned ASC
             """
-            result = db.execute(text(query)).fetchall()
+            result = db.execute(text(query)).mappings().all()
             return [dict(row) for row in result]
         except Exception as e:
             print(f"Error fetching {name}: {e}")
