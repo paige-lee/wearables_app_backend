@@ -25,7 +25,7 @@ app.add_middleware(GZipMiddleware, minimum_size=10000)
 # Allow frontend access from your Vercel domain
 origins = [
     "http://localhost:3000",                 # for local dev
-    "https://wearables-app-backend.onrender.com"  # replace with your actual Vercel URL
+    "https://wearables-app.vercel.app"  # replace with your actual Vercel URL
 ]
 
 # CORS: allow frontend (localhost:3000) to access the backend
